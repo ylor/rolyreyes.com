@@ -2,19 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Socials from "../components/Socials.astro";
 
-const selectRandom = (arr) => {
-  const randIndex = Math.floor(Math.random() * arr.length);
-  return arr[randIndex];
-};
-
+const title = "Roly Reyes";
 const blurb = [
   "being angry at Windows Registry",
   "breaking my homelab",
-  "learning new tech",
+  "reading a man page",
+  "containerizing a service",
   "obsessing over monospace typography",
   "reinstalling Windows",
+  "writing a shell script"
 ];
-
 const fact = [
   "being sad I will never play Half-Life 3",
   "being the Neon Genesis Evangelion evangelist",
@@ -25,7 +22,10 @@ const fact = [
   "the precise gameplay of Tactical FPS Valorant",
 ];
 
-const title = "Roly Reyes";
+const selectRandom = (arr) => {
+  const randIndex = Math.floor(Math.random() * arr.length);
+  return arr[randIndex];
+};
 ---
 
 <Layout title={title}>
@@ -40,7 +40,7 @@ const title = "Roly Reyes";
       <span class="text-green-400">Operations</span>
     </p>
     <p class="max-w-prose">
-      Experienced, certified, and meticulous <span class="text-white"
+      I'm an experienced, certified, and meticulous <span class="text-white"
         >Sysadmin</span
       >. I do my best work when I'm <strong class="text-zinc-300">
         architecting systems

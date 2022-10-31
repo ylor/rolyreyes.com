@@ -1,5 +1,5 @@
 ---
-const { icon, href, classes="hover:text-white" } = Astro.props;
+const { icon, href, classes = "hover:text-white" } = Astro.props;
 const { default: innerHTML } = await import(`../assets/svg/${icon}.svg?raw`);
 ---
 

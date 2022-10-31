@@ -7,13 +7,21 @@ const selectRandom = (arr) => {
   return arr[randIndex];
 };
 
-const blurb = ["learning about tech", "breaking my homelab"];
+const blurb = [
+  "being angry at Windows Registry",
+  "breaking my homelab",
+  "learning new tech",
+  "obsessing over monospace typography",
+  "reinstalling Windows",
+];
 
 const fact = [
+  "being the Neon Genesis Evangelion evangelist",
+  "being sad I will never play Half-Life 3",
+  "not doing cardio",
   "telling everyone to watch Cowboy Bebop",
+  "talking about the transformative world design of The Legend of Zelda: Breath of the Wild",
   "the horror genre",
-  "Half-Life 2",
-  "the symbolism of Neon Genesis Evangelion",
   "the precise gameplay of Tactical FPS Valorant",
 ];
 
@@ -37,11 +45,10 @@ const title = "Roly Reyes";
       >. I do my best work when I'm <strong class="text-zinc-300">
         architecting systems
       </strong> and <strong class="text-zinc-300">automating operations</strong
-      >. In my spare time I enjoy {selectRandom(blurb)}. I'm known for having
-      strong opinions about {selectRandom(fact)}. Want to learn more? Check the
-      links below!
+      >. In my spare time you can catch me {selectRandom(blurb)}. I'm also known
+      for {selectRandom(fact)}. Want to learn more? Check the links below!
     </p>
-    <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">adipiscing</a> -->
+    <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">lipsum link</a> -->
     <Socials />
   </section>
 </Layout>

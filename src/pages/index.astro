@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Socials from "../components/Socials.astro";
+
+const title = "Roly Reyes";
+---
+
+<Layout title={title}>
+  <section class="max-w-screen-md flex flex-col gap-3">
+    <h1 class="text-5xl font-black text-cyan-400">{title}</h1>
+    <p class="font-mono font-medium">
+      <!-- <span class="text-red-400">Infosec</span> | -->
+      <span class="text-cyan-400">IT</span> |
+      <span class="text-yellow-400">Automation</span> |
+      <span class="text-green-400">Operations</span>
+    </p>
+    <p class="max-w-prose">
+      Hi <span class="text-xl">👋</span> I'm an experienced, certified, and driven Sysadmin. I do my best work when I'm <strong
+        class="text-zinc-100"
+      >
+        architecting systems
+      </strong> and <strong class="text-zinc-100">automating operations</strong>. Want to learn more? Check the links
+      below!
+      <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">adipiscing</a> -->
+    </p>
+    <Socials />
+  </section>
+</Layout>

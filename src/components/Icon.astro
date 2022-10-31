@@ -1,0 +1,10 @@
+---
+const { icon, href, classes="hover:text-white" } = Astro.props;
+const { default: innerHTML } = await import(`../assets/svg/${icon}.svg?raw`);
+---
+
+<li class:list={["w-6", "h-6", "transition", "hover:scale-110", classes]}>
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <Fragment set:html={innerHTML} />
+  </a>
+</li>

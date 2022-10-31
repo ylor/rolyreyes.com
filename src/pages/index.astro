@@ -2,12 +2,29 @@
 import Layout from "../layouts/Layout.astro";
 import Socials from "../components/Socials.astro";
 
+const selectRandom = (arr) => {
+  const randIndex = Math.floor(Math.random() * arr.length);
+  return arr[randIndex];
+};
+
+const blurb = ["learning about tech", "breaking my homelab"];
+
+const fact = [
+  "telling everyone to watch Cowboy Bebop",
+  "the horror genre",
+  "Half-Life 2",
+  "the symbolism of Neon Genesis Evangelion",
+  "the precise gameplay of Tactical First-Person Shooter Valorant",
+];
+
 const title = "Roly Reyes";
 ---
 
 <Layout title={title}>
   <section class="max-w-screen-md flex flex-col gap-3">
-    <h1 class="text-5xl font-black text-cyan-400">{title}</h1>
+    <h1 class="text-5xl font-black uppercase text-cyan-400">
+      {title}
+    </h1>
     <p class="font-mono font-medium">
       <!-- <span class="text-red-400">Infosec</span> | -->
       <span class="text-cyan-400">IT</span> |
@@ -15,14 +32,16 @@ const title = "Roly Reyes";
       <span class="text-green-400">Operations</span>
     </p>
     <p class="max-w-prose">
-      Hi <span class="text-xl">👋</span> I'm an experienced, certified, and driven Sysadmin. I do my best work when I'm <strong
-        class="text-zinc-100"
-      >
+      Experienced, certified, and meticulous <span class="text-white"
+        >Sysadmin</span
+      >. I do my best work when I'm <strong class="text-zinc-300">
         architecting systems
-      </strong> and <strong class="text-zinc-100">automating operations</strong>. Want to learn more? Check the links
-      below!
-      <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">adipiscing</a> -->
+      </strong> and <strong class="text-zinc-300">automating operations</strong
+      >. In my spare time I enjoy {selectRandom(blurb)}. I'm known for having
+      strong opinions about {selectRandom(fact)}. Want to learn more? Check the
+      links below!
     </p>
+    <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">adipiscing</a> -->
     <Socials />
   </section>
 </Layout>

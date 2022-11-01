@@ -14,7 +14,7 @@ const blurb = [
 ];
 const fact = [
   "being sad I will never play Half-Life 3",
-  "being the Neon Genesis Evangelion evangelist",
+  "being a Neon Genesis Evangelion evangelist",
   "not doing cardio",
   "recommending horror fiction that will ruin your sleep cycle",
   "telling you to watch Cowboy Bebop",
@@ -31,11 +31,11 @@ const selectRandom = (arr) => {
 <Layout title={title}>
   <section class="max-w-screen-md flex flex-col gap-3">
     <h1
-      class="w-fit text-5xl md:text-7xl font-black uppercase text-transparent bg-clip-text bg-gradient-to-r from-red-300 via-blue-400 to-violet-400"
+      class="w-fit text-7xl font-black uppercase text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-blue-400 to-violet-500"
     >
       <a href="/">{title}</a>
     </h1>
-    <p class="font-mono font-medium">
+    <p class="font-mono font-light">
       <!-- <span class="text-red-400">Infosec</span> | -->
       <span class="text-red-400">IT</span> |
       <span class="text-emerald-400">Automation</span> |
@@ -50,7 +50,10 @@ const selectRandom = (arr) => {
     </p>
     <p class="max-w-prose">
       In my spare time you can catch me {selectRandom(blurb)}. I'm also known
-      for {selectRandom(fact)}. Want to learn more? Check the links below!
+      for {selectRandom(fact)}.
+    </p>
+    <p class="max-w-prose">
+      Want to learn more? refresh the page or click the links below!
     </p>
     <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">lipsum link</a> -->
     <Socials />

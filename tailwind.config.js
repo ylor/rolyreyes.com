@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        mono: ["Iosevka Aile Web", ...defaultTheme.fontFamily.mono],
+        mono: ["JetBrainsMono", ...defaultTheme.fontFamily.mono],
       },
     },
   },

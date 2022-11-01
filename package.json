@@ -21,7 +21,6 @@
     "tailwindcss": "^3.2.1"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.1.0",
     "@astrojs/vercel": "^2.3.3"
   }
 }

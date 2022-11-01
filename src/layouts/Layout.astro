@@ -4,22 +4,19 @@ import "@/assets/fonts/inter/3.19/inter.css";
 // import "@/assets/fonts/iosevka-aile/16.3.6/iosevka-aile.css";
 import "@/assets/fonts/JetBrainsMono/2.242/JetBrainsMono.css";
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="I'm an experienced, certified, and meticulous System Administrator. I do my best work when I'm architecting systems and automating operations."
-    />
+    <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
   </head>
-  <body class="bg-[#111] text-zinc-500 flex flex-col justify-center h-screen">
+  <body class="bg-[#111] text-zinc-400 flex flex-col justify-center h-screen">
     <main class="px-[5vw] py-6">
       <div
         class="flex flex-col justify-center items-center gap-3 max-w-7xl mx-auto transition"

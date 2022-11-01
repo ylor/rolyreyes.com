@@ -18,7 +18,7 @@ const fact = [
   "not doing cardio",
   "recommending horror fiction that will ruin your sleep cycle",
   "telling you to watch Cowboy Bebop",
-  '"precise gameplay" in Tactical FPS Valorant',
+  '"precise gameplay" in Valorant',
   "unprompted praise of The Legend of Zelda: Breath of the Wild's interconnected systems and choseive world design",
 ];
 
@@ -46,10 +46,11 @@ const selectRandom = (arr) => {
         class="text-white font-semibold">System Administrator</span
       >. I do my best work when I'm <span class="text-zinc-300">
         architecting systems
-      </span> and <span class="text-zinc-300">automating operations</span>. In
-      my spare time you can catch me {selectRandom(blurb)}. I'm also known for {
-        selectRandom(fact)
-      }. Want to learn more? Check the links below!
+      </span> and <span class="text-zinc-300">automating operations</span>.
+    </p>
+    <p class="max-w-prose">
+      In my spare time you can catch me {selectRandom(blurb)}. I'm also known
+      for {selectRandom(fact)}. Want to learn more? Check the links below!
     </p>
     <!-- <a href="/blog" class="font-bold text-green-400 decoration-2 underline-offset-4 hover:underline">lipsum link</a> -->
     <Socials />

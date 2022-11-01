@@ -18,7 +18,7 @@ const fact = [
   "not doing cardio",
   "recommending horror fiction that will ruin your sleep cycle",
   "telling you to watch Cowboy Bebop",
-  "\"precise gameplay\" in Tactical FPS Valorant",
+  '"precise gameplay" in Tactical FPS Valorant',
   "unprompted praise of The Legend of Zelda: Breath of the Wild's interconnected systems and choseive world design",
 ];
 
@@ -30,18 +30,20 @@ const selectRandom = (arr) => {
 
 <Layout title={title}>
   <section class="max-w-screen-md flex flex-col gap-3">
-    <h1 class="text-5xl font-black uppercase text-cyan-400">
-      {title}
+    <h1
+      class="text-6xl font-black uppercase text-transparent bg-clip-text bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200"
+    >
+      <a href="/">{title}</a>
     </h1>
     <p class="font-mono font-medium">
       <!-- <span class="text-red-400">Infosec</span> | -->
-      <span class="text-cyan-400">IT</span> |
-      <span class="text-yellow-400">Automation</span> |
-      <span class="text-green-400">Operations</span>
+      <span class="text-red-400">IT</span> |
+      <span class="text-emerald-400">Automation</span> |
+      <span class="text-blue-400">Operations</span>
     </p>
     <p class="max-w-prose">
-      I'm an experienced, certified, and meticulous <span class="text-white"
-        >System Administrator</span
+      I'm an experienced, certified, and meticulous <span
+        class="text-white font-semibold">System Administrator</span
       >. I do my best work when I'm <span class="text-zinc-200">
         architecting systems
       </span> and <span class="text-zinc-200">automating operations</span>. In

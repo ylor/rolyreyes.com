@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^2.1.2",
-    "@tailwindcss/typography": "^0.5.7",
-    "astro": "^1.6.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "astro": "^1.6.5",
     "postcss": "^8.4.18",
     "postcss-100vh-fix": "^1.0.2",
     "prettier": "^2.7.1",

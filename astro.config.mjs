@@ -4,8 +4,8 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
-  integrations: [tailwind()],
-  output: "server",
-  site: "https://rolyreyes.com/",
+	adapter: vercel(),
+	integrations: [tailwind()],
+	output: "server",
+	site: "https://rolyreyes.com/",
 });

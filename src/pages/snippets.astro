@@ -1,0 +1,18 @@
+---
+import BaseLayout from "@layouts/Layout.astro";
+const allPosts = await Astro.glob("../snippets/*.md");
+const pageTitle = "My Astro Learning Blog";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>This is where I will post about my journey learning Astro.</p>
+  <ul>
+    {
+      allPosts.map((post) => (
+        <li>
+          <a href={'snippet/' + post.frontmatter.title.split(" ").join("-").toLowerCase()}>{post.frontmatter.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

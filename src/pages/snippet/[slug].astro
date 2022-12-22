@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const { slug } = Astro.params;
+
+const posts = await Astro.glob("../../snippets/*.md");
+const post = posts.find(
+  (post) => post.frontmatter.title.split(" ").join("-").toLowerCase() === slug
+);
+if (!post) return Astro.redirect("/404");
+
+const { Content } = post;
+---
+
+<Layout>
+  <article>
+    <Content />
+  </article>
+</Layout>

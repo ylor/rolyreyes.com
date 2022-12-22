@@ -4,7 +4,7 @@ import "@/assets/fonts/inter/3.19/inter.css";
 // import "@/assets/fonts/iosevka-aile/16.3.6/iosevka-aile.css";
 import "@/assets/fonts/JetBrainsMono/2.242/JetBrainsMono.css";
 
-const { title, description } = Astro.props;
+const { title = "Roly Reyes", description } = Astro.props;
 ---
 
 <html lang="en">
@@ -17,10 +17,10 @@ const { title, description } = Astro.props;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
   </head>
-  <body class="bg-[#111] text-zinc-400 flex flex-col justify-center h-screen">
+  <body class="flex h-screen flex-col justify-center bg-[#111] text-zinc-400">
     <main class="px-[5vw] py-6">
       <div
-        class="flex flex-col justify-center items-center gap-3 max-w-7xl mx-auto transition"
+        class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 transition"
       >
         <slot />
       </div>

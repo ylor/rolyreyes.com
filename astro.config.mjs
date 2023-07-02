@@ -7,10 +7,6 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   adapter: vercel(),
-  experimental: {
-    prerender: true,
-    errorOverlay: true,
-  },
   integrations: [prefetch(), tailwind()],
   output: "server",
   site: "https://rolyreyes.com/",
